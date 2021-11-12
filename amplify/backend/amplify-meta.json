@@ -1,0 +1,74 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ubereats-dev-153948-authRole",
+      "UnauthRoleArn": "arn:aws:iam::225203565461:role/amplify-ubereats-dev-153948-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::225203565461:role/amplify-ubereats-dev-153948-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ubereats-dev-153948-deployment",
+      "UnauthRoleName": "amplify-ubereats-dev-153948-unauthRole",
+      "StackName": "amplify-ubereats-dev-153948",
+      "StackId": "arn:aws:cloudformation:us-east-1:225203565461:stack/amplify-ubereats-dev-153948/492536a0-3e89-11ec-a46c-12ca0e467fbf",
+      "AmplifyAppId": "dk3si9kfinoev"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ubereats-dev-153948-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2021-11-05T22:49:53.818Z",
+      "output": {},
+      "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+    }
+  },
+  "auth": {
+    "ubereatse62ef6df": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "NAME",
+          "PREFERRED_USERNAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ubereats-dev-153948-deployment/amplify-cfn-templates/auth/ubereatse62ef6df-cloudformation-template.yml",
+        "logicalId": "authubereatse62ef6df"
+      },
+      "lastPushTimeStamp": "2021-11-05T22:49:53.823Z",
+      "output": {
+        "UserPoolId": "us-east-1_9FKxp0fre",
+        "AppClientIDWeb": "155iadnsfj5cr1j26l49msjec2",
+        "AppClientID": "3rqcdfvb0e54lbkqdnmcb30b8b",
+        "IdentityPoolId": "us-east-1:932493c4-c307-491a-bbf3-c55728b0d404",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:225203565461:userpool/us-east-1_9FKxp0fre",
+        "IdentityPoolName": "ubereatse62ef6df_identitypool_e62ef6df__dev",
+        "UserPoolName": "ubereatse62ef6df_userpool_e62ef6df"
+      },
+      "lastPushDirHash": "FKkA9zkHzQxc6LIlx1UFjCcS0tM="
+    }
+  }
+}
